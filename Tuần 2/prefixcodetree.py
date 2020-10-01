@@ -23,7 +23,6 @@ class PrefixCodeTree:
     
     def decode(self,code,len):
       current = self
-      #print(current.left.data)
       binData = BitArray(bytes = code, length=len).bin
       s = ""
       for x in binData:
